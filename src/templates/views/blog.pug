@@ -1,0 +1,11 @@
+
+section.blog-section
+	table.table
+		tbody(ng-repeat="user in users | orderBy:'username' ")
+			tr
+				td {{user.username}}
+				td {{user.age}}
+				td {{user.level}}
+				td {{user.place}}
+				td {{user.role}}
+
